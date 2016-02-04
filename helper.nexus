@@ -1,0 +1,6 @@
+begin mrbayes;
+execute sample.nexus;
+lset nst=6 rates=invgamma;
+Prset  revmatpr=Dirichlet(1.0,1.0,1.0,1.0,1.0,1.0) statefreqpr=Dirichlet(1.0,1.0,1.0,1.0) shapepr=Uniform(0.1,50.0) pinvarpr=Uniform(0.0,1.0);
+mcmc ngen=10000000 samplefreq=1000 printfreq=1000 diagnfreq=1000 nchains=4;
+end;
