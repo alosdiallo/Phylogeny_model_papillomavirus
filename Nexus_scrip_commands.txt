@@ -1,0 +1,22 @@
+bsub -q mcore -n 2 -W 48:00 -o e1f.nexus_log.txt mrbayes e1f_h.nexus
+bsub -q mcore -n 2 -W 48:00 -o e1m.nexus_log.txt mrbayes e1m_h.nexus
+bsub -q mcore -n 2 -W 48:00 -o e1z.nexus_log.txt mrbayes e1z_h.nexus
+bsub -q mcore -n 2 -W 48:00 -o e2f.nexus_log.txt mrbayes e2f_h.nexus
+bsub -q mcore -n 2 -W 48:00 -o e2m.nexus_log.txt mrbayes e2m_h.nexus
+bsub -q mcore -n 2 -W 48:00 -o e2z.nexus_log.txt mrbayes e2z_h.nexus
+
+
+bsub -q mcore -n 2 -W 48:00 -o e6f.nexus_log.txt mrbayes e6f_h.nexus
+bsub -q mcore -n 2 -W 48:00 -o e6m.nexus_log.txt mrbayes e6m_h.nexus
+bsub -q mcore -n 2 -W 48:00 -o e6z.nexus_log.txt mrbayes e6z_h.nexus
+bsub -q mcore -n 2 -W 48:00 -o e7f.nexus_log.txt mrbayes e7f_h.nexus
+bsub -q mcore -n 2 -W 48:00 -o e7m.nexus_log.txt mrbayes e7m_h.nexus
+bsub -q mcore -n 2 -W 48:00 -o e7z.nexus_log.txt mrbayes e7z_h.nexus
+
+
+bsub -q mcore -n 2 -W 48:00 -o l1f_h.nexus_log.txt mrbayes l1f_h.nexus
+bsub -q mcore -n 2 -W 48:00 -o l1m_h.nexus_log.txt mrbayes l1m_h.nexus
+bsub -q mcore -n 2 -W 48:00 -o l2f_h.nexus_log.txt mrbayes l2f_h.nexus
+bsub -q mcore -n 2 -W 48:00 -o l1z_h.nexus_log.txt mrbayes l1z_h.nexus
+bsub -q mcore -n 2 -W 48:00 -o l2m_h.nexus_log.txt mrbayes l2m_h.nexus
+bsub -q mcore -n 2 -W 48:00 -o l2z_h.nexus_log.txt mrbayes l2z_h.nexus
