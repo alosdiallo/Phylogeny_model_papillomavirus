@@ -1,3 +1,18 @@
+
+This document is used to track how I processed the different virus nexus files so that others may benefit from my work.  
+The commands varry based on size of the file being processed.  All of these commands were running on an LSF Cluster running CentOS.  
+For infomation on which queue to use please see the following document:
+https://wiki.med.harvard.edu/Orchestra/ChoosingAQueue
+
+If you only have 1 virus file to process use the priority queue because your job will not be paused by the system.  Otherwise try to limit the number of cpu's with the -n option to 2 to ensure that your jobs always run.  Unless someone has multicore enabled with MrBayes this will be the best option.  
+
+Long file
+bsub -W 240:00 -q priority -o CPV_E6_log.txt mrbayes helper3.nexus
+
+Intermediate length file
+bsub -W 168:00 -q priority -N -o log.txt mrbayes helper.nexus
+
+Short files
 bsub -q mcore -n 2 -W 48:00 -o e1f.nexus_log.txt mrbayes e1f_h.nexus
 bsub -q mcore -n 2 -W 48:00 -o e1m.nexus_log.txt mrbayes e1m_h.nexus
 bsub -q mcore -n 2 -W 48:00 -o e1z.nexus_log.txt mrbayes e1z_h.nexus
@@ -20,3 +35,6 @@ bsub -q mcore -n 2 -W 48:00 -o l2f_h.nexus_log.txt mrbayes l2f_h.nexus
 bsub -q mcore -n 2 -W 48:00 -o l1z_h.nexus_log.txt mrbayes l1z_h.nexus
 bsub -q mcore -n 2 -W 48:00 -o l2m_h.nexus_log.txt mrbayes l2m_h.nexus
 bsub -q mcore -n 2 -W 48:00 -o l2z_h.nexus_log.txt mrbayes l2z_h.nexus
+
+Very small file
+bsub -W 12:00 -q short -o log.txt mrbayes helper.nexus
