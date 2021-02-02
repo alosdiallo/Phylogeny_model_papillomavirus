@@ -9,3 +9,12 @@ http://sequenceconversion.bugaco.com/converter/biology/sequences/fasta_to_nexus.
 
 The nexus file included is expected to take days to run, depending on your computing environment.  This was tested using CentOS.
 
+Authors
+--------------------
+	Alos Diallo - Department of Immunology, Harvard Medical School
+  
+Copyright © 2018 the President and Fellows of Harvard College.
+
+![Blavatnikimmunology](https://github.com/alosdiallo/DNA_Rchitect/blob/master/App/www/Blavatnikimmunology.jpg)
+
+### [MIT License](https://github.com/alosdiallo/HiC_Network_Viz_tool/blob/master/Licence.txt)
